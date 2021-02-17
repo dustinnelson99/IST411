@@ -3,7 +3,7 @@
     padding: 0%;
 }
 .container{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-image: url(Image/download.jpg);
     background-position: center;
@@ -67,4 +67,11 @@ p{
     font-size: 50px;
     font-style: italic;
     color: royalblue;
+}
+.feature-img{
+    height: 40%;
+    position: absolute;
+    bottom: 0%;
+    right: 0px;
+
 }
