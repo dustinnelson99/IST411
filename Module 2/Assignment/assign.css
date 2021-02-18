@@ -5,7 +5,7 @@
 .container{
     height: 100%;
     width: 100%;
-    background-image: url(Image/download.jpg);
+    background-image: url(Image/jordan.png);
     background-position: center;
     background-size: cover;
     padding-left: 5%;
@@ -63,7 +63,7 @@ nav ul li{
     cursor: pointer;
 }
 p{
-    text-align: center;
+    text-align: left;
     font-size: 50px;
     font-style: italic;
     color: royalblue;
