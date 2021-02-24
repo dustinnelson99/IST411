@@ -1,7 +1,25 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    box-sizing: border-box;
 }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    flex: 25%;
+    padding: 20%;
+}
+@media screen and (max-width: 992px) {
+    .container {
+        flex: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
 .container{
     height: 100%;
     width: 100%;
