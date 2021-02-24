@@ -5,7 +5,7 @@ function validate(){
         alert("Please enter a word");
         return false;
     }
-    else if ((word !=1) && (number !=2)){
+    else if ((number != 1) && (number !=2)){
         alert("Please enter a 1 or a 2 for the list.");
         document.forms["form"]["number"].value = "";
         return false;
