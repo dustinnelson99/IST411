@@ -4,6 +4,7 @@
 .flexrow {
     display: flex;
     flex-wrap: wrap;
+    background-color: coral;
 }
 .flexcolumn{
     flex: 33%;
