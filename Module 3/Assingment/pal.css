@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+.myrow {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexcolumn{
+    flex: 33%;
+    padding: 20px;
+}
+@media screen and (max-width: 600px) {
+    .myrow {
+        flex-direction: column;
+    }
+}
+.myform1{
+    
+}
