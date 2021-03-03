@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <link rel="stylesheet" href="pal.css">
+    <script src="pal.js"></script>
+</head>
+<body>
+    
+    
+            <h1>Check if a word is a palindrome</h1>
+            <div class="flexrow">
+                <div class="flexcolumn">
+                    <h1>Place word in algorithm 1 or 2</h1>
+            <form name= "form">
+                Palindrome to test: <input type="text" name="word" value=""><br>
+                Algorithm 1 or 2: <input type="number" name="number" value=""><br>
+                <input type="button" value="Add to list" onclick="validate()">
+            </form>
+        </div>
+    
+    <div class= "flexcolumn">
+        <h1>Algorithm 1</h1>
+        <h4>Palindrome?</h4>
+        <table id="myform1">
+        </table>
+        <br><br>
+        <input type="button" value="Clear List" onclick="clearlist1()">
+
+    </div>
+    <div class= "flexcolumn">
+        <h1>Algorithm 2</h1>
+        <h4>Palindrome?</h4>
+        <table id="myform2">
+        </table>
+        <br><br>
+        <input type="button" value="Clear List" onclick="clearlist2()">
+    </div>
+    </div>
+</body>
+</html>

@@ -1,19 +1,16 @@
 *{
     box-sizing: border-box;
 }
-.myrow {
+.flexrow {
     display: flex;
     flex-wrap: wrap;
 }
-.flexcolumn{
+.flexrow{
     flex: 33%;
     padding: 20px;
 }
 @media screen and (max-width: 600px) {
-    .myrow {
+    .flexrow {
         flex-direction: column;
     }
-}
-.myform1{
-    
 }
