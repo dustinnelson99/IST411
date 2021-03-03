@@ -21,14 +21,29 @@ function validate(){
             }
                     var tableRef = document.getElementById("myform1");
                     (tableRef.insertRow(tableRef.rows.length)).innerHTML = word + "=True"; 
-            }
-            else{
+        }
+            
+    else{
+ 
+            var wordTableTwo = document.forms["form"]["word"].value;
+            var opposite = wordTableTwo.split("").reverse().join("");
+            var palid = true;
+            //Checks if reverse is the same
+            if(opposite != wordTableTwo){
+                palid = false;
+                
                 var tableRef = document.getElementById("myform2");
-                    (tableRef.insertRow(tableRef.rows.length)).innerHTML = word + "=True";
+                    (tableRef.insertRow(tableRef.rows.length)).innerHTML = word + "=False";
+                    return;
             }
-            
-            
+            var tableRef = document.getElementById("myform2");
+                    (tableRef.insertRow(tableRef.rows.length)).innerHTML = word + "=True";
     }
+    }
+    
+}        
+        
+    
         function clearlist1(){
             var tableRef = document.getElementById("myform1");
             tableRef.innerHTML = " ";
@@ -37,4 +52,5 @@ function validate(){
             var tableRef = document.getElementById("myform2");
             tableRef.innerHTML = " ";
         }
-    }
+
+
