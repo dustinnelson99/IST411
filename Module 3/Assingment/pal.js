@@ -25,12 +25,12 @@ function validate(){
             
     else{
  
-            var wordTableTwo = document.forms["form"]["word"].value;
-            var opposite = wordTableTwo.split("").reverse().join("");
-            var palid = true;
+            var word2 = document.forms["form"]["word"].value;
+            var opposite = word2.split("").reverse().join("");
+            var pal = true;
             //Checks if reverse is the same
-            if(opposite != wordTableTwo){
-                palid = false;
+            if(opposite != word2){
+                pal = false;
                 
                 var tableRef = document.getElementById("myform2");
                     (tableRef.insertRow(tableRef.rows.length)).innerHTML = word + "=False";
