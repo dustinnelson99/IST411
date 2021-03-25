@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Module 4 </title>
+
+<link rel= "stylesheet" href="Cesar.css">
+<script src="Cesar.js"></script>
+</head>
+<body>
+<h2> Obtain user information </h2>
+<label for="newParagraphs"> How many paragraphs?</label>
+<select id ="newParagraphs">
+	<option value=1>1</option>
+	<option value=2>2</option>
+	<option value=3>3</option>
+	<option value=4>4</option>
+	<option value=5>5</option>
+	</select><br /><br/>
+<label for="newPara">Meat or Meat&Filler?</label>
+<select id="newPara">
+	<option value=1>Meat</option>
+	<option value=1>Meat and Filler</option>
+	</select><br /><br/>
+
+	<input type="button" value="Get my Bacon Ipsum!" onclick="getBaconipsum()">
+	</div>
+
+	<div class="myflexboxColumn">
+	<h2> Returned data in raw JSON</h2>
+	<p id="myRawData">
+	</p>
+	</div>
+	<div class="myflexboxColumn">
+	<h2> Returned data as formatted paragraphs</h2>
+	<p id="myFormattedData">
+	</p>
+	</div>
+	<div class="myflexboxColumn">
+	<h2> Returned encrypted data</h2>
+	<p id="myEncryptedData">
+	</p>
+	</div>
+ </div>
+</body>
+</html>
