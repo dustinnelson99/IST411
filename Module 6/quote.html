@@ -9,19 +9,9 @@
     <title>Random Quote Machine</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/product/">
-    <link href="quote.css" rel="stylesheet"
-
-    
-
-    <!-- Bootstrap core CSS -->
-
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  
-
     
     <!-- Custom styles for this template -->
-    <link href="product.css" rel="stylesheet">
+    <link href="quote.css" rel="stylesheet">
     <script src="quotemachine.js"></script>
   </head>
   <body>
@@ -43,12 +33,13 @@
       <label for="para"> What size would you like the quote to be?</label>
       <select name="para" id="para">
           <option value="50">Short Quote</option>
-          <option value="120">Medium Quote</option>
+          <option value="150">Medium Quote</option>
           <option value="300">Long Quote</option>
       </select> <br>
       <input type="button" value="Search for a Random Quote" onclick="getData()">
       <div class="myflexboxColumn">
           <p class="quote" id="quote"> Click the button to get a new quote</p>
+          <p class="author" id="author"></p>
       </div>
     
   </body>
