@@ -1,22 +1,17 @@
-/*
-Reference
-https://sahithyandev.github.io/sv443-joke-api-js-wrapper/
-*/
+async function getData(){
+  var apiString= "https://v2.jokeapi.dev/joke/Any";
 
-console.log(Object.values(JokeAPI));
+  ///random?minLength=100&maxLength=140
+  var inputValue = document.getElementById("para").value;
+  apiString= apiString +"?type="+ inputValue;
+  alert(apiString);
 
-// JokeAPI.getJokes().then(r => console.log(r.body))
-JokeAPI.getJokes({
-  jokeType: "single"
-})
-  .then((r) => r.json())
-  .then((data) => {
-    updateUI(data);
-  });
+  var response = await fetch(apiString);
 
-// To update the joke on the UI
-function updateUI(jokeData) {
-  const $ = (id) => document.getElementById(id);
+  document.getElementById("quote").innerHTML = "";
 
-  $("joke--text").innerHTML = jokeData.joke;
+  var jsonData = await response.json();
+
+  document.getElementById("quote").innerHTML = JSON.stringify(jsonData);
+  return true;
 }

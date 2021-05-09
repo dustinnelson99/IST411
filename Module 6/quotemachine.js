@@ -1,5 +1,5 @@
 async function getData(){
-    var apiString= "https://api.quotable.io/random";
+    var apiString= "https://v2.jokeapi.dev/";
 
     ///random?minLength=100&maxLength=140
     var inputValue = document.getElementById("para").value;
